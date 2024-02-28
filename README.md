@@ -8,7 +8,9 @@ Its purpose is simply to provide information about her profession in terms of it
 The project is useful for those users that would like to drill down a bit on the family counselor profession, as they can read up on it in the Homepage as well as on the Therapies page. Additionally, this project might be useful for users that think they might need to reach out to the family counselor herself too, as they may need to avail of her help and schedule some counseling sessions with Cinzia.
 The ultimate idea here is to deliver a fully functional website to Cinzia, who currently does not have one, so that she can use it herself for her profession and to enable her to establish a meaningful and important presence online aimed also at helping her expand her business footprint.
 # How users can get started with the project
-As a user opens up the CN Cinzia Nardinocchi | Psychology & Counseling Homepage, they will see a sticky menu on the top for an easy navigation through the website and a hero image right below it (every page has a different hero image with a header h1):
+As a user opens up the CN Cinzia Nardinocchi | Psychology & Counseling Homepage, they will see a sticky menu on the top for an easy navigation through the website and a hero image right below it (every page has a different hero image with a header h1 Code can be seen in the 'header' tag of each page and on the banners.css file):
+
+
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/c4b04077-0f88-487e-b378-f0b76c35735f">
 
