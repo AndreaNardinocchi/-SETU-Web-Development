@@ -33,7 +33,7 @@ The knowledge source for this nav has been taken from "Beginner's Step by Step C
 <h3>Hero banner</h3>
 
 Right below the sticky nav bar, the user will se the Hero banner. 
-Every page has a different hero image with a header h1 Code can be seen in the 'header' tag of each page and on the banners.css file:
+Every page has a different hero image with a h1 header, whose code can be seen in the 'header' tag of each page and on the banners.css file:
 
 <img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/965551a3-949a-4291-b2a3-7ecae45ea36e"><br>
 index.njk
@@ -50,32 +50,56 @@ banners.css
 // Part of the #banner id properties have been taken from "Beginner's Step by Step Coding Course-Learn Computer Programming the easy way", DK author, published 
    in 2020, page 314-315.//<br><br>
 
+<h3>Main content section | Two column section</h3>
 As the user scrolls down, there will be some informative sections regarding Cinzia Nardinocchi and the family counselor profession overall, such as what a counselor is and why a user might want to avail of their services, as well as on mental health.
-A CTA to know more about Cinzia is embedded in the article, which will land the user to the 'About me' page:
+A CTA to know more about Cinzia is embedded in the article, which will land the user to the 'About me' page.
+The 2 column layout is achieved by means of a 2 column grid template (grid.css) in the id #maincontent id resting, in turn, upon an underling 4 column grid template created in the .container class:<br><br>
+
+<img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/f1113148-cc03-4973-b78f-9f86b9f3506f">
+
+.container class/selector <br><br>
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/df3fb664-9ac9-4314-a304-78c24410f056"><br><br>
+#maincontent selector and its children ids <br><br>
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/10ada1d1-f7f2-420a-af22-1abea6a702e0"><br>
 
 
-<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/10ada1d1-f7f2-420a-af22-1abea6a702e0">
 
+<h3>Three column section</h3>
 
-Towards the bottom of the homepage, a user will come across a three column section where there is some short info about person, couples and family counseling with CTAs which will take the user to the Therapies page where they can delve more into the topics:
+Towards the bottom of the homepage, a user will come across a three column section where there is some short info about person, couples and family counseling with CTAs which will take the user to the Therapies page where they can delve more into the topics:<br>
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/628a246c-c59f-4761-9341-c2209d711fad"><br>
+#three-column-box id in the grid.css file <br><br>
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/489b0aaa-b501-411b-8f1f-d4e4d10aaabd">
 
+<h3>Horizontal-banner section</h3>
 
-Right, below, there is an horizontal banner with an image in the background with an overlay content on the right and CTA, which will take the user to the 'Contact & Fees' page:
+Right below the trhee column layout, there is an horizontal banner with an image in the background, an overlay content on the right and a CTA, which will take the user to the 'Contact & Fees' page. 
+The code can be found in 'horizontal-banner.njk' and in 'banners.css': 
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e6cc069e-c1bc-4925-a301-43627b2d571f">
 
+<h3>Subscribe Newsletter section</h3>
 
-Finally, the user will see a 'widget' to sign up for the newsletter with name and email fields and CTA to 'Subscribe':
+The user will then hit a 'widget' to sign up for the newsletter with name and email fields and CTA to 'Subscribe' whose code is in 'horizontal-banner.njk' and 'form.css'.
+<h4>Source attribution</h4>
+// The idea of a subscribe widget has been taken from this website https://marisasitaliankitchen.com/, and the form code knowledge has been acquired here https://www.w3schools.com/howto/howto_css_contact_form.asp and https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form //<br><br>
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/9edd58c0-e79c-4170-aa52-085343fd5b66">
 
-as well as a footer with contact details and a logo, and an underfooter with a copyright mark and the developer's acknowledgement:
+<h3> Footer </h3>
 
-<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/8bfd6375-1e19-493b-a29a-fa4a9578462b">
+Finally, a footer with contact details and a logo, and an underfooter with a copyright mark and the developer's acknowledgement end the page flow.
+The code for both can be seen in 'footer.njk' and 'nav-foot.css' where I used a 4 column grid template in the #footer id:<br>
 
-Navigation, newsletter subscriptions, footer and underfooter are expreience fragments/blocks re-used across all pages.
+<img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/635fcd66-3561-4a85-8e0a-2615428ab1a4"><br>
+nav-foot.css <br><br>
+
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/8bfd6375-1e19-493b-a29a-fa4a9578462b"><br><br>
+
+Navigation, newsletter subscriptions, footer and underfooter are experience fragments/blocks re-used across all pages.
 
 <h2>Therapies</h2>
 
