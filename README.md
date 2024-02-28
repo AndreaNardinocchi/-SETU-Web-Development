@@ -10,13 +10,45 @@ The ultimate idea here is to deliver a fully functional website to Cinzia, who c
 # How users can get started with the project
 <h2>Home</h2>
 
-As a user opens up the CN Cinzia Nardinocchi | Psychology & Counseling Homepage, they will see a sticky menu on the top for an easy navigation through the website and a hero image right below it (every page has a different hero image with a header h1 Code can be seen in the 'header' tag of each page and on the banners.css file):
+As a user opens up the CN Cinzia Nardinocchi | Psychology & Counseling Homepage, they will see a sticky nav menu on the top for an easy navigation through the website.
 
+<h3>Navigation bar</h3>
 
+The code for the Flexbox navigation nav menu can be found in the 'nav.njk' and in the 'nav-foot.css' files:
+<h4>Source attribution</h4>
+// 
+The knowledge source for this nav has been taken from "Beginner's Step by Step Coding Course-Learn Computer Programming the easy way", DK author, published in 2020, page 222-223 and:<br><br>
 
-<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/c1472f9e-2304-463e-8cbc-a77cf9b75353">
+   
+<ul>
+     <li>https://freshman.tech/flexbox-navbar/ for Flexbox navigation </li>
+     <li> https://developer.mozilla.org/en-US/docs/Web/CSS/overflow for overflow: hidden; (when content does not fit in the box, it will be hidden thanks to the value of this property) </li>
+     <li>https://stackoverflow.com/questions/61545007/dropdown-menu-is-hidden-behind-my-hero-image  z-index: 1; (This property and its value enable the navigation bar to stick above any other elements in the website, which is helpful as the ultimate effect is to have a sticky one)</li>
+     <li>https://css-tricks.com/almanac/properties/b/box-sizing/ box-sizing </li>
+   </ul
+  >//<br><br>
 
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/a719d421-ca8b-4b6e-a732-a9262c8e590d">
 
+<h3>Hero banner</h3>
+
+Right below the sticky nav bar, the user will se the Hero banner. 
+Every page has a different hero image with a header h1 Code can be seen in the 'header' tag of each page and on the banners.css file:
+
+<img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/965551a3-949a-4291-b2a3-7ecae45ea36e"><br>
+index.njk
+
+<img width="482" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/35e5f9ca-6c6e-4b47-b555-5c225239938b"><br>
+
+<img width="439" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/0fac692a-448f-452a-9fea-b108641a030a">
+<br>
+banners.css
+<br><br>
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/c1472f9e-2304-463e-8cbc-a77cf9b75353"><br>
+<h4>Source attribution</h4>
+// Part of the #banner id properties have been taken from "Beginner's Step by Step Coding Course-Learn Computer Programming the easy way", DK author, published 
+   in 2020, page 314-315.//<br><br>
 
 As the user scrolls down, there will be some informative sections regarding Cinzia Nardinocchi and the family counselor profession overall, such as what a counselor is and why a user might want to avail of their services, as well as on mental health.
 A CTA to know more about Cinzia is embedded in the article, which will land the user to the 'About me' page:
@@ -67,7 +99,7 @@ By clicking on the first two article boxes on the top, the user will open up 2 a
   <li><b>Carl Rogers' Person-Centered Approach</b></li>
 </ul>
 
-The 2 articles preserve the structure of parent 'Blog' page, although they do not show a hero image and the article layout is a one column only. The 'aside' layout 'Latest articles' is still present on the right end of the page.
+The 2 articles preserve the structure of the parent 'Blog' page, although they do not show a hero image and the article layout is a one column only. The 'aside' layout 'Latest articles' is still present on the right end of the page.
 
 <h2>About me</h2>
 
