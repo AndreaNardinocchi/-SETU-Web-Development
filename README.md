@@ -159,7 +159,7 @@ Its css code is in the 'grid.css' file:<br><br>
 <img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/78022530-f947-450f-b750-e92e54fc159a"><br><br>
 
 <h4>Source attribution</h4>
-// The white list has been created by observing what was done in thia page https://sharkcoder.com/blocks/list Example #2* //<br><br>
+// The white list has been created by observing what was done in this link https://sharkcoder.com/blocks/list Example #2* //<br><br>
 
 
 
