@@ -3,16 +3,18 @@ This is a website created to be submitted as a first Web Development assignment 
 # CN Cinzia Nardinocchi | Psychology & Counseling
 This website is about a Family Counselor based in Italy.
 # What this project does 
-Its purpose is simply to provide information about her profession in terms of its history and evolution in Italy, what a counselor practically does, the type of therapies, a blog, a short biography and also some contacts to get in touch.
+Its purpose is simply to provide information about the family counselor profession in terms of its history and evolution in Italy, what a counselor practically does, the type of therapies that Cinzia relies upon. Additionally, it includes a blog, a short biography and also some contacts to get in touch with the counselor.
 # Why the project is useful
-The project is useful for those users that would like to drill down a bit on the family counselor profession, as they can read up on it in the Homepage as well as on the Therapies page. Additionally, this project might be useful for users that think they might need to reach out to the family counselor herself too, as they may need to avail of her help and schedule some counseling sessions with Cinzia.
-The ultimate idea here is to deliver a fully functional website to Cinzia, who currently does not have one, so that she can use it herself for her profession and to enable her to establish a meaningful and important presence online aimed also at helping her expand her business footprint.
+The project is useful for those users that would like to drill down a bit on the family counselor profession, as they can read up on it in the 'Home' page as well as on the 'Therapies' page. Additionally, this project might be useful for users that think they might need to avail of the family counselor's help and schedule some counseling sessions with Cinzia.
+The ultimate ideas here would be to deliver a fully functional website to Cinzia, who currently does not have one, so that she can use it herself for her profession, and to enable her to establish a meaningful and important presence online aimed also at helping her business footprint growth.
 # How users can get started with the project
 <h2>Home</h2>
 
-As a user opens up the CN Cinzia Nardinocchi | Psychology & Counseling Homepage, they will see a sticky nav menu on the top for an easy navigation through the website.
+As a user opens up the CN Cinzia Nardinocchi | Psychology & Counseling Home page, they will see a sticky nav bar on the top for an easy navigation through the website.
 
 <h3>Navigation bar</h3>
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/a719d421-ca8b-4b6e-a732-a9262c8e590d"><br><br>
 
 The code for the Flexbox navigation nav menu can be found in the 'nav.njk' and in the 'nav-foot.css' files:
 <h4>Source attribution</h4>
@@ -28,12 +30,12 @@ The knowledge source for this nav has been taken from "Beginner's Step by Step C
    </ul
   >//<br><br>
 
-<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/a719d421-ca8b-4b6e-a732-a9262c8e590d">
+
 
 <h3>Hero banner</h3>
 
 Right below the sticky nav bar, the user will se the Hero banner. 
-Every page has a different hero image with a h1 header, whose code can be seen in the 'header' tag of each page and on the banners.css file:
+Every page has a different hero image with a h1 header, whose code can be seen in the 'header' tag of each page and on the 'banners.css' file:
 
 <img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/965551a3-949a-4291-b2a3-7ecae45ea36e"><br>
 index.njk
@@ -53,36 +55,36 @@ banners.css
 <h3>Main content section | Two column section</h3>
 As the user scrolls down, there will be some informative sections regarding Cinzia Nardinocchi and the family counselor profession overall, such as what a counselor is and why a user might want to avail of their services, as well as on mental health.
 A CTA to know more about Cinzia is embedded in the article, which will land the user to the 'About me' page.
-The 2 column layout is achieved by means of a 2 column grid template (grid.css) in the id #maincontent id resting, in turn, upon an underling 4 column grid template created in the .container class:<br><br>
+The 2 column layout is achieved by means of a 2 column grid template (grid.css) in the #maincontent id resting, in turn, upon an underling 4 column grid template created in the .container class:<br><br>
 
 <img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/f1113148-cc03-4973-b78f-9f86b9f3506f">
 
-.container class/selector <br><br>
+.container class/rule <br><br>
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/df3fb664-9ac9-4314-a304-78c24410f056"><br><br>
-#maincontent selector and its children ids <br><br>
+#maincontent id/rule and its children ids <br><br>
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/10ada1d1-f7f2-420a-af22-1abea6a702e0"><br>
 
 
 
 <h3>Three column section</h3>
 
-Towards the bottom of the homepage, a user will come across a three column section where there is some short info about person, couples and family counseling with CTAs which will take the user to the Therapies page where they can delve more into the topics:<br>
+Towards the bottom of the homepage, a user will come across a three column section where there is some short info about person, couples and family counseling with CTAs, which will take the user to the Therapies page where they can delve more into the topics:<br>
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/628a246c-c59f-4761-9341-c2209d711fad"><br>
-#three-column-box id in the grid.css file <br><br>
+#three-column-box id in the 'grid.css' file <br><br>
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/489b0aaa-b501-411b-8f1f-d4e4d10aaabd">
 
 <h3>Horizontal-banner section</h3>
 
-Right below the trhee column layout, there is an horizontal banner with an image in the background, an overlay content on the right and a CTA, which will take the user to the 'Contact & Fees' page. 
+Right below the three column layout, there is an horizontal banner with an image in the background, an overlay content on the right and a CTA, which will take the user to the 'Contact & Fees' page. 
 The code can be found in 'horizontal-banner.njk' and in 'banners.css': 
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e6cc069e-c1bc-4925-a301-43627b2d571f">
 
 <h3>Subscribe Newsletter section</h3>
 
-The user will then hit a 'widget' to sign up for the newsletter with name and email fields and CTA to 'Subscribe' whose code is in 'horizontal-banner.njk' and 'form.css'.
+The user will then hit a 'widget' to sign up for the newsletter with name and email fields and CTA to 'Subscribe', whose code is in 'horizontal-banner.njk' and 'form.css'.
 <h4>Source attribution</h4>
 // The idea of a subscribe widget has been taken from this website https://marisasitaliankitchen.com/, and the form code knowledge has been acquired here https://www.w3schools.com/howto/howto_css_contact_form.asp and https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form //<br><br>
 
@@ -118,7 +120,7 @@ No CTAs on this page.
 
 This page is a blog embedded into the website and users can see 4 articles at present on a 'two column' layout on the left and an 'aside' layout on the right column where the 'Latest Articles' should be rendered (only Lorem Ipsum content has been used in there as a sample).
 
-By clicking on the first two article boxes on the top, the user will open up 2 articles, whilst the 2 at the bottom do not have contnet at present:
+By clicking on the first two article boxes on the top, the user will open up 2 articles, whilst the 2 at the bottom do not have content, at present (they just redirect to the Home page):
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/69d6f126-33f3-460e-b05c-196aebebf943">
 
@@ -147,7 +149,10 @@ Code can be observed in the 'blog.njk', 'sidebar.njk' and 'grid.css' file :<br><
 
 <h2>About me</h2>
 
-This page hosts a biography of the family counselor Cinzia Nardinocchi on the top with a link to a blog article on Carl Rodgers, as well as a section on her counseling guiding principles and a section at the very bottom inviting the user to schedule an appointmnet with Cinzia through a CTA button:<br><br>
+This page hosts a biography of the family counselor Cinzia Nardinocchi on the top with a link to a blog article on Carl Rodgers. It also has a section on her counseling guiding principles and a section at the very bottom inviting the user to schedule an appointment with Cinzia through a CTA button:<br><br>
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/97185f6c-1d80-405e-a22d-abf27dc959dc"><br><br>
+
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/11ebb583-1ea6-4c0d-aa64-d3cda9bf77b7">
 
@@ -167,11 +172,17 @@ Its css code is in the 'grid.css' file:<br><br>
 
 This page provides the user with info regarding the counselor's location, a map, a picture of the counseling room and a form to fill out to get in touch with the counselor:
 
-<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e29f90b0-a30c-4fdf-b7fc-11197bb6cd9d">
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e29f90b0-a30c-4fdf-b7fc-11197bb6cd9d"><br><br>
+
+The form code can be found in the block 'contact-form.njk' and 'form.css'.
+
+<h4>Source attribution</h4>
+// The form code knowledge has been acquired here https://www.w3schools.com/howto/howto_css_contact_form.asp and https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form //<br><br>
+
 
 # Where users can get help with your project
 
-As shown above, aside from information regarding the counselor profession and counseling overall throughout the pages, the 'Home', 'Blog', 'About me' and 'Contact & Fees' pages they all show CTAs for users to take action and get in touch with the family counselor.
+As shown above, aside from information regarding the counselor profession and counseling overall throughout the pages, the 'Home', 'Blog', 'About me' and 'Contact & Fees' pages show CTAs for users to take action and get in touch with the family counselor.
 
 # Who maintains and contributes to the project
 
