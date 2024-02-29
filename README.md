@@ -103,9 +103,14 @@ Navigation, newsletter subscriptions, footer and underfooter are experience frag
 
 <h2>Therapies</h2>
 
-This page is an informative about some insights on the history and evolution of the profession, the mission of the it and the type of therapies:
+This page is an informative one providing insights on the history and evolution of the profession, its mission and, above all, the type of therapies:
 
-<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/72928e0c-d144-472a-822e-4026c9ed39ce">
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/72928e0c-d144-472a-822e-4026c9ed39ce"><br><br>
+I wanted to create a re-usable block for the below section that I called 'underneath-banner' since it is consumed in 3 pages ('Home', 'Therapies', 'About me'), but its h2 header is different in each page and, therefore, I decided to leave it off as coded into the pages themselves:<br>
+
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e31227f3-ff5e-4644-9f51-192058e27271">
+
 
 No CTAs on this page.
 
@@ -125,11 +130,38 @@ By clicking on the first two article boxes on the top, the user will open up 2 a
 
 The 2 articles preserve the structure of the parent 'Blog' page, although they do not show a hero image and the article layout is a one column only. The 'aside' layout 'Latest articles' is still present on the right end of the page.
 
+Ex. 'Carl Rogers' Person-Centered Approach' article <br><br>
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/a0cab880-33bc-4fce-a7f7-87a3d5e735ee"><br><br>
+
+This article also features a YouTube video of Carl Rogers.
+
+Code can be observed in the 'blog.njk', 'sidebar.njk' and 'grid.css' file :<br><br>
+<img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/2a8b8e81-c11f-4dba-ad40-145575bb3125">
+<br>
+<img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/539cac35-96a6-44bd-bbc9-f44595538a15">
+
+
+
+
+
 <h2>About me</h2>
 
-This page hosts a biography of the family counselor Cinzia Nardinocchi on the top with a link to a blog article on Carl Rodgers, as well as a section on her counseling guiding principles and a section at the very bottom inviting the user to schedule an appointmnet with Cinzia through a CTA button:
+This page hosts a biography of the family counselor Cinzia Nardinocchi on the top with a link to a blog article on Carl Rodgers, as well as a section on her counseling guiding principles and a section at the very bottom inviting the user to schedule an appointmnet with Cinzia through a CTA button:<br><br>
 
 <img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/11ebb583-1ea6-4c0d-aa64-d3cda9bf77b7">
+
+Noteworthy here is the white unorder list in the right column of the blue box :<br><br>
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/76c913cb-8ca9-4af9-bb80-ea17e78dbfc9">
+<br><br>
+Its css code is in the 'grid.css' file:<br><br>
+<img width="300" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/78022530-f947-450f-b750-e92e54fc159a"><br><br>
+
+<h4>Source attribution</h4>
+// The white list has been created by observing what was done in thia page https://sharkcoder.com/blocks/list Example #2* //<br><br>
+
+
 
 <h2>Contact & Fees</h2>
 
