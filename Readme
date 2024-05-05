@@ -1,0 +1,395 @@
+// This file has been created via https://markdownlivepreview.com/ //
+
+# -SETU-Web-Development
+This is a website created to be submitted as a second Web Development assignment for SETU, Waterford, Ireland.
+
+# whether-weather-an
+This website is about forecasts of 9 cities whose data are originated in json files and rounded up in a js file, as an instantiation of a const variable, namely 'weatherData'.
+
+# What this project does 
+Its purpose is simply to provide forecasts of the cities added to the website by means of clickable cards in the index/dashboard page.
+In a nutshell, the data shown on the website homepage reflect the dayly data/forecasts (Max temperature and wind speed at 10 meters above ground). Upon clicking on one of the cities, a city-focus page will present an array of data to the user about daily and hourly forecasts as well as dayly hourly forecasts of the current week.
+
+
+# Why the project is useful
+The project is useful for those users that would like to check the weather forecasts of the the day or of the entire week. However, the main purpose of the project was for the writer to be exposed to the use of Bulma components and, above all, JavaScript.
+The ultimate ideas here would have been to expand the website insofar that it would have included city-focus pages with forecasts focused on each single day of the week as well as a favourite city list to enable the user to only show the cities he wishes.
+However, being still tachnically challenged at this stage and also due to time constraints, I decided not to pursue such objectives. 
+
+# How users can get started with the project
+
+## Home page
+
+As a user opens up the Whether Weather AN Homepage, they will see a sticky nav bar on the top for an easy navigation through the website.
+
+### Navigation bar
+
+
+
+
+
+The code for the Flexbox navigation nav menu can be found in the 'nav.njk' and in the 'nav-foot.css' files:
+
+#### Source attribution
+// 
+The knowledge source for this nav has been taken from "Beginner's Step by Step Coding Course-Learn Computer Programming the easy way", DK author, published in 2020, page 222-223 and:
+
+
+* https://freshman.tech/flexbox-navbar/ for Flexbox navigation 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow for overflow: hidden; (when content does not fit in the box, it will be hidden thanks to the value of this property)
+* https://stackoverflow.com/questions/61545007/dropdown-menu-is-hidden-behind-my-hero-image  z-index: 1; (This property and its value enable the navigation bar to stick above any other elements in the website, which is helpful as the ultimate effect is to have a sticky one)
+* https://css-tricks.com/almanac/properties/b/box-sizing/ box-sizing //
+
+
+
+### Hero banner
+
+Right below the sticky nav bar, the user will se the Hero banner. 
+Every page has a different hero image with a h1 header, whose code can be seen in the 'header' tag of each page and on the 'banners.css' file:
+
+
+```
+<header class="banner banner-homepage">
+  <h1>
+    Family Counseling
+  </h1>
+</header>
+```
+index.njk
+
+```
+.banner-homepage { 
+  background-image: url("../images/hero.jpg");
+}
+```
+```
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-left: 5%;
+  height: 70%;
+  top:0%;
+}
+
+.banner h1 {
+  color: white;
+  font-size:2.5em;
+  margin: 0%;
+  position: absolute;
+  left: 20%;
+  width: 100%
+  text-align: center;
+  top: 70%;
+  word-wrap: break-word;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+```
+banners.css
+
+<img width="482" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/ff42edab-2eee-4a66-a759-4fc47b559482">
+
+#### Source attribution
+// Part of the #banner id properties have been taken from "Beginner's Step by Step Coding Course-Learn Computer Programming the easy way", DK author, published 
+   in 2020, page 314-315.//
+
+### Main content section | Two column section
+
+As the user scrolls down, there will be some informative sections regarding Cinzia Nardinocchi and the family counselor profession overall, such as what a counselor is and why a user might want to avail of their services, as well as on mental health.
+A CTA to know more about Cinzia is embedded in the article, which will land the user to the 'About me' page.
+The 2 column layout is achieved by means of a 2 column grid template (grid.css) in the #maincontent id resting, in turn, upon an underling 4 column grid template created in the .container class:
+
+```
+.container {
+  display: grid;
+  grid-template-columns: 8% 82% 8%;
+  grid-gap: 1%;
+}
+```
+
+```
+#maincontent {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2%;
+}
+
+#maincontent-first-column {
+  grid-column-start: 1;
+  padding:10% 2.5% 10% 10%;
+}
+
+#maincontent-second-column {
+  grid-column-start: 2;
+  padding:10% 10% 10% 2.5%;
+}
+
+```
+
+.container class/rule 
+#maincontent id/rule and its children ids in 'grid.css' 
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/011a8ce0-bfc8-426d-a9b8-c1c7c6eb08ae">
+
+
+
+### Three column section
+
+Towards the bottom of the homepage, a user will come across a three column section where there is some short info about person, couples and family counseling with CTAs, which will take the user to the Therapies page where they can delve more into the topics:
+
+```
+#three-column-box {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 32.67% 32.67% 32.67%;
+  grid-gap: 1%;
+  padding:1% 5% 5% 5%;
+  text-align: center;
+}
+
+```
+#three-column-box id in the 'grid.css' file 
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/b40afbd0-8bae-4e6f-bd5c-f3bcee176c24">
+
+### Horizontal-banner section
+
+Right below the three column layout, there is an horizontal banner with an image in the background, an overlay content on the right and a CTA, which will take the user to the 'Contact & Fees' page. 
+The code can be found in 'horizontal-banner.njk' and in 'banners.css': 
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/c97f324b-587d-4699-8ba4-36f028024983">
+
+### Subscribe Newsletter section
+
+The user will then hit a 'widget' to sign up for the newsletter with name and email fields and CTA to 'Subscribe', whose code is in 'horizontal-banner.njk' and 'form.css'.
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/bf557c29-6413-413c-adcd-70dcc94fce99">
+
+#### Source attribution
+
+// The idea of a subscribe widget has been taken from this website https://marisasitaliankitchen.com/, and the form code knowledge has been acquired here https://www.w3schools.com/howto/howto_css_contact_form.asp and https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form //
+
+
+### Footer
+
+Finally, a footer with contact details and a logo, and an underfooter with a copyright mark and the developer's acknowledgement end the page flow.
+The code for both can be seen in 'footer.njk' and 'nav-foot.css' where I used a 4 column grid template in the #footer id:
+
+```
+/**************** footer CSS *******************/
+
+
+#footer {
+  background-color: #7c93c3;
+  color: white;
+  display: grid;
+  grid-template-columns: 14.5% 34% 34% 14.5%; 
+  grid-gap: 1%;
+  padding: 4% 1% 4% 1%;
+}
+
+#footer-left { 
+  grid-column-start: 2;
+  padding: 0% 2% 0% 9%;
+}
+
+#footer-right { 
+  grid-column-start: 3;
+  padding: 0% 9% 0% 2%;
+}
+
+#footer-right a {
+  color: #eef5ff;
+  text-decoration: none;
+}
+
+#footer-right  a:hover {
+  color: white;
+  font-size:150%;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+#underfooter {
+  background-color: #a25772;
+  color: white;
+  margin-top: 0%;
+  padding:0.2% 0% 0.05% 0%;
+  text-align: center;
+}
+
+#underfooter a {
+  color: #9eb8d9;
+  text-decoration: none;
+}
+
+#underfooter  a:hover {
+  color: white;
+  text-decoration: none;
+}
+```
+nav-foot.css 
+
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/819af7da-7cf8-41f7-b35d-703da3d1f80a">
+
+Navigation, newsletter subscriptions, footer and underfooter are partials re-used across all pages.
+
+## Therapies
+
+This page is an informative one providing insights on the history and evolution of the profession, its mission and, above all, the type of therapies:
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/558dcbe7-d340-420b-865f-164c607f9745">
+
+I wanted to create a re-usable block for the below section that I called 'underneath-banner' since it is consumed in 3 pages ('Home', 'Therapies', 'About me'), but its h2 header is different in each page and, therefore, I decided to leave it off as coded into the pages themselves:
+
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e31227f3-ff5e-4644-9f51-192058e27271">
+
+
+No CTAs on this page.
+
+## Blog
+
+This page is a blog embedded into the website and users can see 4 articles at present on a 'two column' layout on the left and an 'aside' layout on the right column where the 'Latest Articles' should be rendered (only Lorem Ipsum content has been used in there as a sample).
+
+By clicking on the first two article boxes on the top, the user will open up 2 articles, whilst the 2 at the bottom do not have content, at present (they just redirect to the Home page):
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/cf4cb6ea-5fbd-4170-8e2c-c24cece3b4dc">
+
+### Blog articles
+
+* The Eternal Child</b></li>
+* Carl Rogers' Person-Centered Approach
+
+The 2 articles preserve the structure of the parent 'Blog' page, although they do not show a hero image and the article layout is a one column only. The 'aside' layout 'Latest articles' is still present on the right end of the page.
+
+Ex. 'Carl Rogers' Person-Centered Approach' article 
+
+<img width="700" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/d32c1d80-f9c5-4c10-8d7e-279e5903b6ca">
+
+This article also features a YouTube video of Carl Rogers.
+
+Code can be observed in the 'blog.njk', 'sidebar.njk' and 'grid.css' file :
+```
+.blog-container {
+  display: grid;
+  grid-template-columns: 8% 65% 16% 8%;
+  grid-gap: 1%;
+}
+
+.blog-container h2 {
+  color: #7c93c3 ;
+}
+
+.blog-article-preview {
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: #cccccc;
+  line-height: 1.2em;
+  margin:0.5em 0em 0.5em 0em;
+  padding:0em 1em 0em 1em;
+  text-align: center;
+}
+
+---etc. ------
+
+/****************** sidebar classes and id *************/
+
+
+.sidebar {
+  grid-column-start: 3;
+  margin-top: 0.5em;
+  padding:5% 0% 5% 0%;
+  padding:1em 0em 1em 0em;
+}
+
+.sidebar h3 {
+  padding-top:1em 
+}
+
+h3#sidebar-blue-ribbon {
+  background-color: #7c93c3;
+  border-radius: 8px;
+  color: white;
+  padding:1em .1em 1em 1em;
+}
+```
+
+
+
+
+
+## About me
+
+This page hosts a biography of the family counselor Cinzia Nardinocchi on the top with a link to a blog article on Carl Rodgers. It also has a section on her counseling guiding principles and a section at the very bottom inviting the user to schedule an appointment with Cinzia through a CTA button:
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/0eaa8374-9445-4438-ae39-da16d22961c8"><br><br>
+
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/74aa7814-7535-4d24-83d4-a73f218129cc">
+
+Noteworthy here is the white unorder list in the right column of the blue box :
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/a2474968-c937-404a-8a15-0971a686adcf">
+
+Its css code is in the 'grid.css' file:
+
+```
+ul#white-list li {
+  background: white;
+  border-radius: 8px;
+  color: #a25772;
+  display: block;
+  font-weight: 400;
+  font-size:1.0em; 
+  margin: .5em 0 .5em 2.5em;
+  padding: .4em .4em .4em .8em;
+  position: relative;
+  text-decoration: none;
+}
+```
+
+#### Source attribution
+
+// The white list has been created by observing what was done in this link https://sharkcoder.com/blocks/list Example #2* //
+
+
+## Contact & Fees
+
+This page provides the user with info regarding the counselor's location, a map, a picture of the counseling room and a form to fill out to get in touch with the counselor:
+
+<img width="500" alt="image" src="https://github.com/AndreaNardinocchi/-SETU-Web-Development/assets/51911079/e29f90b0-a30c-4fdf-b7fc-11197bb6cd9d">
+
+The form code can be found in the block 'contact-form.njk' and 'form.css'.
+
+#### Source attribution
+// The form code knowledge has been acquired here https://www.w3schools.com/howto/howto_css_contact_form.asp and https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form //
+
+### Privacy Policy
+
+When clicking on the Privacy Policy link in the form, a new page pops up with the Privacy Policy content ( this is just a sample copied and pasted and adapted to this websire).
+
+#### Source attribution
+// https://onefamily.ie/privacypolicy/ //
+
+# Where users can get help with your project
+
+As shown above, aside from information regarding the counselor profession and counseling overall throughout the pages, the 'Home', 'Blog', 'About me' and 'Contact & Fees' pages show CTAs for users to take action and get in touch with the family counselor.
+
+# Who maintains and contributes to the project
+
+This project will be maintained by myself only.
+
+
+
+
+
+
+
+
+
+
